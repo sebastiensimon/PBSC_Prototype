@@ -1,0 +1,327 @@
+.digimeg-nav-wrap {
+    position: relative;
+}
+.digimeg-nav-wrap .digimeg-main-nav {
+    /*position: absolute;
+    top:0px;
+    left: 0px;*/
+    display: block;
+    width: 100%;
+	margin-top:0px;
+}
+
+
+
+.digimeg-nav-wrap .digimeg-main-nav li {
+    list-style-type: none;
+    display: inline;
+    float: left;
+    position: absolute;
+    right: 0; top:12px;
+    z-index: 1000;
+
+}
+
+
+@media screen and (max-width:480px){
+.digimeg-main-nav li a {
+    color: #2b6859;
+    display: block;
+    font-size:30px!important;
+    margin-top: 31px!important;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px !important;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    top: -7px !important;
+    height: 55px !important
+} 
+#voucher-subnav {
+    margin-top: -94px !important;
+}
+}
+
+@media screen and (min-width:481px) and (max-width:767px){
+.digimeg-main-nav li a {
+    color: #2b6859;
+    display: block;
+    font-size: 46px!important;
+    margin-top: 31px!important;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px !important;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    top: -13px !important;
+    height: 93px !important;
+}
+#voucher-subnav {
+    padding-bottom: 3%;
+    margin-top: -10px !important;
+}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){ 
+
+.digimeg-main-nav li a {
+    color: #2b6859;
+    display: block;
+    font-size: 46px!important;
+    margin-top: 31px!important;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px !important;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    top: -7px;
+} 
+.pull-right a div.hidden-xs{display:none;}
+
+.digimeg-nav-wrap {
+    margin-top: 15px;
+    padding: 0 0px;
+    /* display: none; */
+}
+}
+#voucher-subnav {
+    padding-bottom: 3%; margin-top:12px;
+}
+#voucher-subnav .dropdown-menu {
+    position: relative;
+}
+#voucher-subnav .dropdown-menu{
+    position: relative;
+    float: none;
+    color: #fff;
+    background: none;
+    box-shadow: none;
+    border: 0;
+}
+#voucher-subnav .dropdown-menu li a:hover{
+    background: none;
+    color: #dbb43e;
+    text-decoration:none;
+}
+.dropdown-toggle:focus {
+    text-decoration: none;
+}
+.digimeg-nav-wrap .digimeg-main-nav li a {
+    display: block;
+    padding:25px 25px 10px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #2b6859;
+    position: relative;
+    margin-top: 25px;
+    text-align: center;
+    padding-top:10px!important;
+    top: -12px;
+}
+#menu_close {
+    display:none;
+}
+
+.digimeg-nav-wrap .digimeg-main-nav li a span {
+    font-size: 22px;
+}
+.digimeg-nav-wrap .digimeg-main-nav li a:hover {
+    background: #1b9e7e;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    height: auto;
+    opacity: 0.9;
+    top: -12px;
+}
+
+
+
+.digimeg-sub-nav li {
+    display: block;
+    width: 100%;
+    background: #1b9e7e;
+    opacity: 0.9;
+    left: 0;
+}
+.digimeg-sub-nav li a:hover{
+    color: #ecb731;
+    margin-left:5px;
+}
+.digimeg-sub-nav>li{
+    /*border-bottom: 1px solid #8F7676;*/
+}
+
+.digimeg-nav-item-content {
+    padding: 30px;
+    color: black;
+}
+
+.digimeg-nav-item-content h2 {
+    font-size: 30px;
+    font-family: "segoe ui light";
+    font-weight: 400;
+}
+
+.digimeg-nav-item-content a {
+    color: black;
+}
+
+.digimeg-nav-chunk {
+    display: block;
+    float: left;
+}
+#primary_menu {
+    border-right: 0px;
+}
+#primary_menu .active {
+    color: #dbb43e;
+    
+}
+
+.digimeg-nav-chunk ul li a{
+    font-size: 22px;
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.digimeg-sub-nav {
+    position: relative;
+    z-index: 999;
+    top: 133px;
+}
+
+.digimeg-sub-nav>li {
+    position: absolute;
+    top:0px;
+    display: none; overflow:hidden !important; 
+    /*height:auto!important; */
+}
+.SubmenuOnHover {
+    display: none;
+}
+
+@media screen and (max-width:720px)
+{
+
+#voucher-subnav {
+margin-top:-60px;
+}
+.digimeg-nav-wrap .digimeg-main-nav {
+
+	margin-top:15px;  padding:15px;
+}
+.digimeg-nav-chunk ul li a{
+    font-size: 16px;
+}
+.digimeg-nav-item-content h2 {
+    font-size: 26px;
+
+}
+.digimeg-sub-nav>li {
+    display: none; 
+    overflow-y:scroll !important; 
+    /*height:750px!important; */
+    width:100% !important;
+}
+.digimeg-nav-item{overflow-y:auto !important;}
+
+.digimeg-nav-wrap .digimeg-main-nav li {
+	top:0;
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px)
+{
+.digimeg-main-nav {display:none;}
+.acad-text li { margin-right: 20px; width:46% !important; float:left;  font-size: 14px; font-weight: 500;}
+ .greenBoxes .smallText {
+    font-size: 12px;
+}
+.digimeg-nav-wrap .digimeg-main-nav {
+
+	margin-top:15px; padding:25px 0 10px;
+}
+
+.digimeg-nav-wrap .digimeg-main-nav li {
+	top:7px;
+}
+
+.digimeg-nav-wrap .digimeg-main-nav li a {
+    display: block;
+    padding:25px 10px -10px 10px;
+	  margin-top:10px;
+
+}
+
+.digimeg-nav-wrap .digimeg-main-nav li a:hover {
+ padding:25px 10px -10px 10px;
+	margin-top:10px;
+}
+.digimeg-sub-nav>li { 
+    top: -12px; 
+}
+.header {
+    padding-bottom: 6px;
+    padding-top: 0px;
+}
+#voucher-subnav {
+margin-top: -38px !important;
+} 
+
+.sft{padding-left:0px;}
+
+
+   
+}
+.sft{padding-left:0px;}
+
+@media screen and (max-width: 480px)
+#voucher-subnav {
+    margin-top: -94px !important;
+}
+ @media screen and (max-width:768px)
+{
+
+
+.header {
+    margin-top: -63px;
+    padding-bottom: 6px;
+    padding-top: 0px;
+} 
+.acad-slider img{width:100%; height:auto;  border-bottom: 8px solid #ecb831;}
+.event-slider img{width:100%; height:auto; }
+.acad-section{ background: url("../images/dotted-border.png") repeat-x 0 0; 
+padding: 20px 0px 10px 0px; width: 100%; max-width: 145px; text-align:left !important; }  
+
+#voucher-subnav {
+    margin-top:-38px; 
+}
+ }
+ 
+ .prog img {
+    padding-bottom: 10px;
+}
+
+
+ @media screen and (max-width:1024px)
+{
+#voucher-subnav {
+    margin-top: -31px; 
+}         
+ 
+.acad-section{ background: url("../images/dotted-border.png") repeat-x 0 0; 
+padding: 20px 0px 10px 0px; width: 100%; max-width: 300px; text-align:left !important; margin: 0 auto}
+  }
+  
+  .digimeg-sub-nav li a:focus{
+text-decoration: none !important
+}

@@ -1,0 +1,44 @@
+/* custom */
+#hideonprint{visibility:hidden; display:none;}
+.padding1em td, .padding1em { padding:1em;}
+.table5-striped {border-collapse:collapse;width:100%;max-width:100%;padding: 0;margin: 0 auto;border: 1px solid #ccc;} /* gray */  
+.table5-striped thead tr th, table.table5-striped thead tr td {background-color:#ccc;color:black;font-weight:bolder; letter-spacing:0.2em;word-spacing:0.2em;padding:1%;font-size:120%;}
+.table5-striped tr td.cellheader {background-color:#ccc;color:black;font-weight:bolder; letter-spacing:0.2em;word-spacing:0.2em;padding:1em;font-size:120%;}
+.table5-striped tr.cellheader td {background-color:#ccc;color:black;font-weight:bolder; letter-spacing:0.2em;word-spacing:0.2em;padding:1em;font-size:120%;}
+.table5-striped td {color: #000;border: 0px solid white;padding:0.5%;}
+.table5-striped tr:nth-child(even){ color: black;background-color: #fff;vertical-align: top;text-align: left;border-bottom: 1px solid #fff;}
+.table5-striped tr:nth-child(odd){ color: black;background-color: #e4e3e5;vertical-align: top;text-align: left;border-bottom: 1px solid #e4e3e5;}
+.table5-striped tr:nth-last-child(-n+1) {border-bottom: 1px solid silver;} /* last table row */
+.table5-striped tr:not(:first-child):hover {border-bottom: 1px solid #ccc;}/* all but first row */
+.table5-striped table[id^="ContentPlaceHolder1_cbl"] { width:100%;}
+.table5-striped table[for^="ContentPlaceHolder1_cbl"] { margin-left:20%;}
+.table5-striped table[id^="ContentPlaceHolder"] tbody > tr > td { padding-left:1em;}
+.table5-striped table[id^="ContentPlaceHolder"] > tbody > tr:nth-child(odd), .table5-striped table[id^="ContentPlaceHolder"] > tbody > tr:nth-child(even), .table5-striped table[id^="ContentPlaceHolder"] > tbody > tr > td {border:0;background-color: transparent;}
+.table5-striped .formfieldw50 { width:50%; min-width:20%;}
+.table5-striped .formfieldw10 { width:100%; min-width:10%;}
+/* reset */
+* {font-size: 12pt;font-family: sans-serif, Verdana, Arial;}
+body { line-height: 150%; margin: 0.5em; font: 12pt sans-serif, Verdana, Arial; line-height: 1.3;background: #fff !important;color: #000; }
+.bluesubheading, .greensubheading, .lightgreensubheading, h1 {color: #000 !important; font-weight: bold; font-size: 16pt;}
+a:link, a:visited, a {background: transparent; color: #615f5f !important; font-weight: bold; text-decoration: none;text-align: left;}
+a { page-break-inside:avoid}
+/* a[href^=http]:after {content:" <" attr(href) "> ";} */
+/* article a[href^="#"]:after {content: "";} prevents anchor links from printing*/
+/* p a:after {content: " (" attr(href) ")";font-size: 80%;} prints URL after link text*/
+nav, navbar, .related-links, .back_link, .list-unstyled .list-inline, .digimeg-nav-item, .students-greentabs, .greentabs-head, .greentabs-headbold, .arrow, .videofullscreen, .embed-container, .embed-container iframe, .embed-container object, #google_translate_element, .program-action-button, img#printicon {display: none;}
+.videofullscreen, .embed-container, .embed-container iframe, .embed-container object, iframe {border: none !important;}
+.page-title {color: #000; font-size: 24pt;}
+.subhead, .panel-group .panel-title, .subheading {color: #000 !important; font-size: 22pt; margin-top: 25px;}
+.panel .panel-default .panel-faq {height: auto !important; display: none;} /*Accordion print styles*/
+.panel-heading, .panel-heading .accordion-gray, .panel-heading .accordion-blue { background-color: #fff !important; color: #000 !important;}
+body:before {content: url(/_resources/images/logo.png);} /*adds logo to top of print page*/
+.collapse {display: block;} /*expands accordion for ctrl+p */
+#fixed-header, .footer2, .grayArea, #connectSection {display: none;} /*removes header, copyright footer, three boxes and Instagram for ctrl+p */
+nav.sidebars .navbar-nav > li:first-child, nav.sidebars.navbar {display: none;} /*removes sidebar nav for ctrl+p */
+.panel-heading, .panel-heading .accordion-gray, .panel-heading .accordion-blue { background-color: #fff !important; color: #000 !important;}
+img.img-responsive {max-width: 600px !important;} 
+/* Home page modifications */
+.slide-news {max-width: 100%;} /* Style white text inside black box on home page */
+.slide-news span {font-size: 15pt;}
+.slide-news p {margin-bottom: 10px;}
+.fixed-width-news {padding: 0} /*remove white space between logo and text */

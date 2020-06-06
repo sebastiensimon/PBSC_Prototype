@@ -1,0 +1,325 @@
+/*
+Implementations Skeletor v3 - 5/10/2014
+
+oustyles.css
+
+Add styles to overwrite customer CSS, USE WITH CAUTION.
+
+Contributors: Your Name Here
+Last Updated: Enter Date Here
+*/
+.navbar-nav {
+    float: none;
+}
+
+.ou-no-top-margin {
+	top: 0px !important;
+}
+/*Alert*/
+.ou-alert-warning {
+	background-color: #8a6d3b !important;
+}
+
+.ou-alert-danger {
+	background-color: #cc0326 !important;
+}
+
+.ou-alert-info {
+	background-color: #31708f !important;
+}
+
+.ou-alert-success {
+	background-color: #3c763d !important;
+}
+/* Social Media*/
+.ou_symbols .ou_box{
+	width: 20%;
+	margin: 5px 10px;
+	display: inline-table;
+}
+.ou_symbols{
+	clear: both;
+	margin: 0 auto;
+	border: 2px rgba(150,150,150, 0.5) solid;
+	background: rgba(255,255,255, 0.9);
+	z-index: 2147483647;
+	position: absolute;
+}
+.ou_symbol_fix_pos
+{
+	left:50px !important;
+	top: 130px !important;
+
+}
+/*.ou-justedit-active .ou_symbols{
+display: block;
+}*/
+.ou_column_class:after{
+	content: "?";
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	width: 1.8ex;
+	height: 1.8ex;
+	font-size: 1.4ex;
+	line-height: 1.8ex;
+	border-radius: 1.2ex;
+	margin-right: 4px;
+	padding: 1px;
+	color: #2F6381;
+	border: 1px solid #2F6381;
+	text-decoration: none;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.ou_column_class:hover:after
+{
+	color: white;
+	background: #2F6381;
+	border-color: white;
+	text-decoration: none;
+}
+.ou_symbol_header h2{
+	display:inline;
+}
+.ou_close{
+	float:right;
+	display: inline;
+	font-weight: bold;
+	text-align: center;
+    width: 2ex;
+    /* height: 2.5ex; */
+    font-size: 1.6ex;
+    line-height: 1.4ex;
+	border-radius: 1.2ex;
+	margin-right: 4px;
+	padding: 1px;
+	color: #2F6381;
+	border: 1px solid #2F6381;
+	text-decoration: none;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.ou_close
+{
+	color: white;
+	background: #2F6381;
+	border-color: white;
+	text-decoration: none;
+}
+
+.ou_symbols{
+	display:none;
+}
+
+/* Search Pagination */
+ul.pagination {
+	list-style: none;
+	display: block;
+	overflow: hidden;
+	padding: 0 5px 5px 0;
+	margin: 0;
+}
+
+.pagination li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+
+.pagination a {
+	float: left;
+	color: #666 !important;
+	font-size:14px;
+	line-height:24px;
+	font-weight: normal;
+	text-align: center;
+	border: 1px solid #BBB;
+	min-width: 14px;
+	padding: 0 7px;
+	margin: 0 5px 0 0;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	background: #efefef; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#efefef 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#efefef 100%); /* IE10+ */
+	background: linear-gradient(top, #ffffff 0%,#efefef 100%); /* W3C */
+}
+
+.pagination a:hover {
+	text-decoration: none;
+	background: #ccc !important;
+}
+
+.pagination .current {
+	background: #ccc;
+	color: #FFF !important;
+	border-color: #444;
+	box-shadow: 0 1px 0 rgba(255,255,255,1), 0 0 2px rgba(0, 0, 0, 0.3) inset;
+	cursor: default;
+}
+
+.pagination .ellipse {
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	font-weight: bold;
+	cursor: default;
+}
+
+.ou-news ul, .search-results ul {
+  list-style: none;
+  padding:0;
+}
+
+.ou-news ul li,.search-results ul li{
+  border-bottom:1px solid #ddd;
+  margin-bottom:20px;
+  padding-bottom:10px;
+}
+
+.ou-news  h5,.search-results h5 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.ou-news h2, .search-results  h2  {
+    font-size: 2em;
+	font-weight:500;
+}
+
+.ou-news h3, .search-results h3{ 
+    font-size: 1em;
+	font-weight:500;
+	margin-bottom:0px;
+	
+}
+
+.ou-news p.short-desc, .search-results p.short-desc {
+  font-size: 1em;
+  margin-bottom:0;
+  padding-top:-15px;
+  margin-top:-15px;
+}
+
+.ou-news img{
+	max-height: 100px;
+	margin: -20px 0 0 0;
+}
+.search-results a.manf-name {
+  font-size:1em;
+
+}
+
+.search-results ul .panelbbet {
+background-color:#ddddff;padding-left:.5em;padding-right:.5em;
+}
+
+.search-results ul .panelbbet h5 {
+padding-top:.5em;
+}
+
+.search-results a.search-icon-link {
+	display: none;
+}
+
+.search-results li:hover a {
+	text-decoration: underline;
+}
+
+input[type=text].dream-search, .dream-search  input[type=password].dream-search, .dream-search input[type=email].dream-search, .dream-search input[type=tel].dream-search {
+    height: 2.0em !important;
+    font-size: 1.5em;
+}
+
+.oulogo {
+  height: auto!important;
+  width: auto!important;
+  float: right!important;
+}
+
+.search-filter-results, .search-filter-results ul li{
+  list-style:none;
+}
+
+.search-filter-results li label{
+  margin-left: 10px;
+}
+.fdw-background p {
+	
+	float: left;
+
+}
+.button{
+    padding: 1px 6px;
+	align-items: flex-start;
+    text-align: center;
+	text-rendering: auto;
+	letter-spacing: normal;
+    word-spacing: normal;
+	text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+}
+/*Add underline to links as requested by customer */
+.ou-main a{
+	text-decoration: underline;
+} 
+.ou-main .panel-heading a, .ou-main .panel-heading a:hover, .ou-main .panel-heading a:focus{
+	text-decoration: none;
+} 
+.ou-main .students-greentabs a{
+	text-decoration: none;
+}
+.ou-main .cd-tabs-navigation a{
+	text-decoration: none;
+}
+.ou-link-nounderline{
+	text-decoration: none !important;
+}
+.ou-link-nounderline a{
+	text-decoration: none !important;
+}
+.panel-body a{
+	color: #f9f9f9;
+}
+/*** Fixing box news in homepage ***/
+
+
+.slide-news {
+    height: auto;
+}
+/* Fix size of links in Program table transformation */
+.yellowbutton span a{
+	font-size: inherit;
+}
+
+/* Fix issue with uppercase in program */
+
+@media (min-width: 992px) {
+	
+	.blueright-area .yellowtext {
+		text-transform: initial;
+	}
+}
+@media (min-width: 768px)
+	{
+	.blueright-area .yellowtext {
+		text-transform: initial;
+	}
+
+}
+.blueright-area .yellowtext {
+	text-transform: initial;
+}
+
+/*Added to fix mobile display when Banner News snippet is not included in homepage - OU Support ticket #39255*/
+@media screen and (max-width: 768px){
+.desk-sliderarea {height: 300px;}
+}

@@ -1,0 +1,15 @@
+body {
+	padding-top:0px;
+}
+#categoryBanner, #categoryBanner #whiteOverlay, #categoryBanner #whiteOverlay .container {
+	height: 80px;
+}
+header#mainHdr,
+#pageContent #rightColumn,
+.hupso-share-buttons,
+footer #footerCatsWrap {
+	display:none !important;
+}
+#pageContent #leftColumn {
+	width: auto;
+}

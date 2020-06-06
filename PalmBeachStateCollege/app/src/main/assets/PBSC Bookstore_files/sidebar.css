@@ -1,0 +1,173 @@
+.main .row{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	/*Remove rounded coners*/
+
+	.navbar-inverse{background-color: #2b6959 !important; border: 0px !important;}
+	.navbar-nav a, .navbar-nav .active{color: #fff !important; font-size:15px; }
+	.navbar-nav li:hover{background-color: #1a9d7c !important;}
+	.navbar-toggle a{border:0px !important;}
+	.navbar-brand a{color: #fff !important;}
+
+	nav.sidebars.navbar {
+		border-radius: 0px;
+	}
+
+	nav.sidebars, .main{
+		-webkit-transition: margin 200ms ease-out;
+	    -moz-transition: margin 200ms ease-out;
+	    -o-transition: margin 200ms ease-out;
+	    transition: margin 200ms ease-out;
+	}
+
+	/* Add gap to nav and right windows.*/
+	.main{
+		padding: 10px 10px 0 10px;
+	}
+
+	/* .....NavBar: Icon only with coloring/layout.....*/
+
+	/*small/medium side display*/
+
+	.related-links{width:100%; max-width: 300px; padding-top: 30px; margin: 0 5px;}
+	.related-links .linktitle{font-family: 'RobotoCondensed-Bold'; font-size: 22px; font-weight: 600; color: #2b6959; line-height: 30px; text-align: left;}
+	.related-links .links1 ul{list-style-type: none; margin: 0; padding: 0;}
+	.related-links .links1 li{ margin: 0; padding: 0;}
+	.related-links .links1 li{font-family: 'RobotoCondensed-REgular'; font-size: 20px; font-weight: 500; color: #2b6959; line-height: 30px; text-align: left; text-decoration: none;}
+	.related-links .links1 li a{font-family: 'RobotoCondensed-REgular'; font-size: 20px; font-weight: 500; color: #2b6959; line-height: 30px; text-align: left; text-decoration: none; margin-left:-41px;}
+	.related-links .links1 li a:hover{color: #333; line-height: 30px; text-decoration: none;}
+	
+	.related-links .links ul{list-style-type: none; margin: 0; padding: 0;}
+	.related-links .links li{list-style-type: none; margin: 0; padding: 0;}
+	.related-links .links li{font-family: 'RobotoCondensed-REgular'; font-size: 20px; font-weight: 500; color: #2b6959; line-height: 30px; text-align: left; text-decoration: none;}
+	.related-links .links li a{font-family: 'RobotoCondensed-REgular'; font-size: 20px; font-weight: 500; color: #2b6959; line-height: 30px; text-align: left; text-decoration: none; margin-left:-38px;}
+	.related-links .links li a:hover{color: #333; line-height: 30px; text-decoration: none;}
+
+
+
+
+	@media (min-width: 768px) {
+
+		/*Allow main to be next to Nav*/
+		.main{
+			position: absolute;
+			width: calc(100% - 40px); /*keeps 100% minus nav size*/
+			margin-left: 40px;
+			float: right;
+		}
+
+		/*lets nav bar to be showed on mouseover*/
+		nav.sidebars:hover + .main{
+			margin-left: 200px;
+		}
+
+		/*Center Brand*/
+		nav.sidebars.navbar.sidebars>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+			margin-left: 0px;
+		}
+		/*Center Brand*/
+		nav.sidebars .navbar-brand, nav.sidebars .navbar-header{
+			text-align: center;
+			width: 100%;
+			margin-left: 0px;
+		}
+
+		/*Center Icons*/
+		nav.sidebars a{
+			padding-right: 13px;
+		}
+
+		/*adds border top to first nav box */
+		nav.sidebars .navbar-nav > li:first-child{
+			border-top: 1px #fff solid;
+		}
+
+		/*adds border to bottom nav boxes*/
+		nav.sidebars .navbar-nav > li{
+			border-bottom: 1px #fff solid;
+		}
+
+		/* Colors/style dropdown box*/
+		nav.sidebars .navbar-nav .open .dropdown-menu {
+			position: static;
+			float: none;
+			width: auto;
+			margin-top: 0;
+			background-color: transparent;
+			border: 0;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+		/*allows nav box to use 100% width*/
+		nav.sidebars .navbar-collapse, nav.sidebars .container-fluid{
+			padding: 0 0px 0 0px;
+		}
+
+		/*colors dropdown box text */
+		.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+			color: #fff !important;
+		}
+
+		/*gives sidebar width/height*/
+		nav.sidebars{
+			width: 157px;
+			height: 100%;
+			margin-left: 0px;
+			float: left;
+			z-index: 1;
+			margin-bottom: 0px;
+		}
+
+		/*give sidebar 100% width;*/
+		nav.sidebars li {
+			width: 100%;
+			color:#fff !important;
+		}
+
+		/* Move nav to full on mouse over*/
+		nav.sidebars:hover{
+			margin-left: 0px;
+			
+		}
+		/*for hiden things when navbar hidden*/
+		.forAnimate{
+			opacity: 0;
+		}
+	}
+
+	/* .....NavBar: Fully showing nav bar..... */
+
+	@media (min-width: 1330px) {
+
+		/*Allow main to be next to Nav*/
+		.main{
+			width: calc(100% - 200px); /*keeps 100% minus nav size*/
+			margin-left: 200px;
+		}
+
+		/*Show all nav*/
+		nav.sidebars{
+			margin-left: 0px;
+			float: left;
+			    width: 100%;
+		}
+		/*Show hidden items on nav*/
+		nav.sidebars .forAnimate{
+			opacity: 1;
+		}
+	}
+
+	nav.sidebars .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebars .navbar-nav .open .dropdown-menu>li>a:focus {
+		color: #fff;
+		background-color: #ecb731;
+	}
+
+	nav:hover .forAnimate{
+		opacity: 1;
+	}
+	section{
+		padding-left: 15px;
+	}

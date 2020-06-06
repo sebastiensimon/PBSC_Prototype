@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "800026999175",
+    "firebase_url": "https://project-5c27a.firebaseio.com",
+    "project_id": "project-5c27a",
+    "storage_bucket": "project-5c27a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800026999175:android:0bc08d3bd70c95a2",
+        "android_client_info": {
+          "package_name": "com.example.asti3.palmbeachstatecollege"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800026999175-enk677887nfo6nuh0ui5luvqmfnj95v1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asti3.palmbeachstatecollege",
+            "certificate_hash": "4ee5125381b6a95e626ace9bf62f9fbb41df436d"
+          }
+        },
+        {
+          "client_id": "800026999175-js6ej019qgksps90hljlhtptt23p3ql1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_xUHu6ctsgTpRS1T04vRGCl90ZPC7fAA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800026999175-js6ej019qgksps90hljlhtptt23p3ql1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

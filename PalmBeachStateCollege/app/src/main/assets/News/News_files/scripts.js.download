@@ -1,0 +1,34 @@
+jQuery(document).ready(function($){
+	$("#searchWrap #searchBtn").click(function(){
+		if( $(window).width() < 701 ){
+			$("#popupSearch").css({top: "0px"});
+		} else {
+			var searchTerm = $(this).parent().find("input").val();
+			doSearch(searchTerm);
+		};
+	});
+	$("#searchWrap input").keypress(function(e){
+		var searchTerm = $(this).parent().find("input").val();
+
+		if( e.which == 13 ){
+			doSearch(searchTerm);
+		};
+	});
+
+	$("#searchWrap #searchBtn2").click(function(){
+		var searchTerm = $(this).parent().find("input").val();
+		doSearch(searchTerm);
+	});
+
+
+	function doSearch(term){
+		window.location = "/?s=" + term;
+	};
+});
+jQuery(window).scroll(function(){
+	if(!jQuery(window).scrollTop()) { //abuse 0 == false :)
+	  jQuery("header#mainHdr").removeClass("notAtTop");
+	} else {
+	  jQuery("header#mainHdr").addClass("notAtTop");
+	};
+});

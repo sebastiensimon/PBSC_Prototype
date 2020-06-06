@@ -1,0 +1,239 @@
+/* ::::::::::::::::::::: html tags ::::::::::::::::::::: */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0;}
+body { margin: 0; font-size: 75%; line-height: 1.42857143;color:#000; background-color: #fff; }
+body, button, input, select, textarea { font-family: Arial, Verdana, sans-serif; }
+button, input, select, textarea { margin: 0; font-size: 100%; vertical-align: baseline; *vertical-align: middle; }
+table { border-collapse: collapse; border-spacing: 0; width:100%; }
+th , td, th { padding: 3px;  vertical-align: top; text-align: left;}
+img, object, embed, video {max-width:100%;}
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+h1 {font-size: 130%; color:#0c387c; margin: 0 0 .5em 0; font-weight:100; background-color:white; width: 85%;}
+h2 {font-size: 110%; color:#006858; margin: 0 0 .5em 0; font-weight:200; background-color:white;}
+h3 {display:block; font-size: 100%; margin: 0 0 .5em 0; font-weight:400; background-color:white; color:#5B574F; }
+h4 {font: bold 18px/1.2 Helvetica, sans-serif; margin:0.15em; font-weight:100; color:#006858;}
+h5 {background:transparent; color:#000;}
+h6 {font-size: 100%; color:#0c387c; margin: 10px 0 .5em 0; font-weight:400; background-color:white; margin:0; padding-top:15px;}
+hr {width: 100%; color: #000; background-color:#E1DCD1; height: 1px; border:none;margin: 2% 0 2% 0;}
+p  {margin: 2% 0 2% 0;}
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: html5 ::::::::::::::::::::: */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: floats ::::::::::::::::::::: */ 
+.cleardiv:before, .cleardiv:after { content: ""; display: table; height:0; }
+.cleardiv:after { clear: both;}
+.cleardiv { zoom: 1; }
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: wrappers ::::::::::::::::::::: */
+.catalogWrapper {position:relative; width: 98%; background-color:white; color:#000; margin: auto; overflow:hidden; max-width:1024px;
+-webkit-box-shadow:  0px 0px 22px 1px rgba(0, 0, 0, .2);
+box-shadow:  0px 0px 22px 1px rgba(0, 0, 0, .2);
+-webkit-background-clip: padding-box;}
+.wrapperspacer:after {content:"\a";white-space: pre;}
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: banner ::::::::::::::::::::: */	
+#topbanner {padding:0;margin:0;width:100%;height:70px;overflow:hidden;}
+#bannercontent {padding:0;margin:0;width:100%;height:100%;}
+.bannerlayout {display:block;background-color:#006858;width:100%;height:100%;font-size:100%;font-weight:300;font-family:Verdana, Arial, sans-serif;position:relative;overflow:hidden;text-decoration:none;background:#006858;border:0px solid #006858;padding:3.5% 0% 3.5% 2.5%;}
+.bannerlayout img {position:absolute;top: 0;left: 1%;}
+#bannertitle {position: absolute; bottom: 0px;width:100%;}
+#bannertitle {margin-left:27%;}/*?????*/
+#catalogtitle, #logotext, a:hover#logotext, #logotext a, #logotext a:active, #logotext a:visited  {color: #fff;text-shadow: 1px 1px 3px #000;text-transform: uppercase;text-align: left;padding:0;font-size:180%;line-height:90%;text-decoration:none;}
+.catalogtext {font-weight:900;}
+.catalogyear {font-weight:500;}
+
+/* .................. quicklinks .................. */	
+ .quicklinks {position:absolute;width:10%;height:100%;left: 90%;top:10%;font-size:120%;}
+ .selectContainer {background: url(../images/m-chevron.png) no-repeat right #fff;color:#000;width: 116px;height: 18px;position:absolute;right:10%;z-index: 0;font-size:60%;padding:6px 0 0 8px;border-radius: 5px;border:1px solid #bababa;}
+.selectLink {opacity: 0; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=0); width: 124px; height: 20px; position: absolute; z-index: 999; top:6px; right: 8px;right:12%;cursor:pointer;}
+
+/* .................. bannercolorline .................. */	
+#bannercolorline  {background: #FDB913;padding: 0;width:100%;height:2px;border-left:1px solid #FDB913;border-right:1px solid #FDB913;border-top:1px solid #FDB913;margin:0px auto;}
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: navigation :::::::::::::::::::::*/
+nav {clear:both;}
+nav a {font-family:Arial, Verdana, sans-serif;font-weight:normal;text-decoration:none;}
+nav ul, nav ol { list-style: none; list-style-image: none;margin: 0;padding: 0; }/*
+
+/* .................. main top navigation .................. */
+#desk-main-nav {color:#5B574F;background-color:#E1DCD1;line-height:2em;text-transform:uppercase;overflow:hidden;}
+#desk-main-nav li a, #desk-main-nav li a:link, #desk-main-nav li a:visited, #desk-main-nav li a:active {display:block; color: #5B574F; background-color:#E1DCD1; text-decoration:none;margin:0;padding:0;}
+#desk-main-nav {width:100%; padding:0.3% 2% 0.3% 0; font-size: 100%;margin:0;}
+#desk-main-nav li {border-left:0.4em solid #E1DCD1;margin-left:0;padding:0 0.747em 0 0.747em;float:left;}
+#desk-main-nav li:hover {border-left:0.4em solid #006858;}
+#desk-main-nav li.highlight {border-left:0.4em solid #006858;margin-left:0;padding-left:0.747em;color:#000;}
+#desk-main-nav li a:hover, #desk-main-nav .highlight a:link, #desk-main-nav .highlight a:visited, #desk-main-nav .highlight a:active, #desk-main-nav .highlight a { color:#000;}
+
+/* .................. leftnavbar navigation .................. */
+#leftNavBar .leftmenu {color:#000;background-color:#F9EAC3;border-top-right-radius: 10px;border-bottom-left-radius: 10px;-webkit-box-shadow:  4px 4px 7px 2px rgba(0, 0, 0, .3);box-shadow:  4px 4px 7px 2px rgba(0, 0, 0, .3);-webkit-background-clip: padding-box;line-height:2em;}/**/
+#leftNavBar {width:21%; float:left; padding:1.2%; border-bottom-left-radius: 10px;}
+.leftmenu a, .leftmenu a:link, .leftmenu a:visited, .leftmenu a:active, .leftmenu a:hover {display:block; color: #000; background-color:#F9EAC3; text-decoration:none; text-transform:none; font-weight:100;margin:0;padding:0;}
+#leftNavBar .leftmenu {width:98%; padding:5% 2% 5% 0; font-size: 100%;margin:0;}
+#leftNavBar .leftmenu li{border-left:0.4em solid #F9EAC3;margin-left:0;padding-left:0.747em;}
+#leftNavBar .leftmenu li:hover {border-left:0.4em solid #006858;}
+#leftNavBar .leftmenu ul li.highlight {border-left:0.4em solid #006858;margin-left:0;padding-left:0.747em;}
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: article ::::::::::::::::::::: */
+article {width: 53.4111111111%; float:left; font-size: 110%; }
+article ul li {list-style-image: url(../images/green-bullet.png); list-style-type: square; color:#5B574F;margin:1% 0 1% 2%;}
+article ul li a {color: #5B574F;}
+article ul li a:hover {color: #000;}
+article .dirfullname {font-weight: bold;}
+article .grouptitle {font-size: 120%;color: #5B574F;}
+article .diredu {font-weight: normal;}
+article .facultydir p {padding-top:0;padding-bottom:0;margin-bottom:0;margin-top:0;}
+article .directory p {padding-top:0;padding-bottom:0;margin-bottom:0;margin-top:0;}
+article .subtitle {font-size: 130%;color: #5B574F;}
+article hr.htab {border: 0;height: 3px;background: #E1DCD1;color:#5B574F;}
+article a {font-family:Arial, Verdana, sans-serif; font-weight:normal; text-decoration:underline; color:#214786; background-color:white;}
+article a:visited, article a:hover, article a:active {text-decoration:underline; color:#58585b; background-color:white;}
+article a:focus { outline:dotted thin #c5c5c5; }
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: archives ::::::::::::::::::::: */ 	
+#archives {width: 100%;}
+.archives {display: table;}
+.column {display: table-cell;}
+article .archives  a {color: #5B574F;}
+.archives  a:hover {color: #000;}
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: catalog search button ::::::::::::::::::::: */ 	
+.fullsearch-button { -webkit-appearance: none; margin-left:15px; width:10%; background-color:#FDB913; border-radius:5px; color:white;font-size: 110%;border:2px solid #FDB913; text-transform: uppercase;}
+.fullsearch-button:active {color:#fff;}
+.fullsearch-button:hover {cursor:pointer;}
+.fullsearch-button:visited {color:#000;}
+input.fullsearchbox {border: 1px solid #ccc;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;-moz-box-shadow: 0px 0px 0px #666;-webkit-box-shadow: 0px 0px 0px #666;box-shadow: 0px 0px 0px #666;font-size: 100%;padding: 4px 7px;outline: 0;-webkit-appearance: none;}
+input.fullsearchbox:focus {-moz-box-shadow: 2px 2px 3px #666;-webkit-box-shadow: 2px 2px 3px #666;box-shadow: 2px 2px 3px #666;}
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: search classes ::::::::::::::::::::: */
+#search-area-screen {margin:20px 2% 0 0;}
+#search-area-screen span.m-search {font-size:100%; padding-left:6%; font-weight: 400; letter-spacing: -0.02em;text-transform:uppercase;}
+#searchwrapper {position:relative; display:block; float:right;width:92%;height:25px;border:1px solid #bababa;background:url(../images/m-bt-mag-glass.png) no-repeat right white;color:#000;margin:2% 2% 2% 0;border-radius: 5px;}
+.searchbox {-webkit-appearance: none;border:0; border-radius:5px;background-color: transparent;width: 75%;padding-left:3%;margin:0 1% 0 1.5%;height: 23px;font-size: 110%;}
+.searchbox_submit {border:0;border-bottom-right-radius:5px;border-top-right-radius:5px;background-color: transparent;color:#000;position: absolute;visibility: visible;left: 84%;width: 32px;height: 27px;margin-top:-1px;}
+#printicon { float:right;}
+.search-head {font: bold 18px/1.2 Helvetica, sans-serif; margin: 24px 0 16px; color: #006858; display: block;}
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: Article inside main content ::::::::::::::::::::: */
+.main-content {position: relative;}
+#insidepage {width: 76%; float:left;}
+#insidepage .main-content {border-right:0;} 
+#insidepage .main-title {color:#006858; font-size:150%;} 
+article .main-content {background-color:white; color:#000; padding:4%; border-left:1px dotted #999999; border-right:1px dotted #999999; min-height:240px;}
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: Program tab accordions ::::::::::::::::::::: */
+.r-tabs .r-tabs-nav {margin: 0;padding: 0;}
+.r-tabs .r-tabs-tab {display: inline-block;margin: 0;list-style: none;}
+.r-tabs .r-tabs-panel {padding: 15px;display: none;}
+.r-tabs .r-tabs-accordion-title {display: none;}
+.r-tabs .r-tabs-panel.r-tabs-state-active {display: block;}
+
+/* .................. Tabs container .................. */	
+.r-tabs {position: relative;background-color: #fff;border-top: 1px solid #E1DCD1;border-right: 1px solid #E1DCD1;border-left: 1px solid #E1DCD1;border-bottom: 4px solid #E1DCD1;border-radius: 5px;}
+
+/* .................. Tab element .................. */
+.r-tabs .r-tabs-nav .r-tabs-tab {position: relative;background-color: white;}
+
+/* .................. Tab anchor .................. */
+.r-tabs .r-tabs-nav .r-tabs-anchor {display: inline-block;padding: 10px 12px;text-decoration: none;font-size: 14px;font-weight: bold;color:#666 ;background-color: #E1DCD1;}
+
+/* .................. Active state tab anchor .................. */
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {color: #666;text-shadow: none;background-color: white;border-top-right-radius: 5px;border-top-left-radius: 5px;}
+
+/* .................. Tab panel .................. */
+.r-tabs .r-tabs-panel {background-color: white;border-bottom: 4px solid white;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;}
+
+/* .................. Accordion anchor .................. */
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {border-top:1px solid #F0F0F0;display: block;padding: 10px;background-color: #E1DCD1;color: #000;font-weight: bold;text-decoration: none;font-size: 14px;border-top-right-radius: 5px;border-top-left-radius: 5px;}
+
+/* .................. Active accordion anchor .................. */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {background-color: #666;color: #E1DCD1;text-shadow: none;}
+
+/* .................. Disabled accordion button .................. */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {opacity: 0.5;}
+
+/* .................. Alpha list divider .................. */
+.anchorlinks {letter-spacing:.3em;word-wrap:break-word;}
+.anchorlinks a, a:hover, a:active {text-decoration:none;color:#5B574F;}
+.alphalist ul li  {list-style-image:none; list-style-type:none;}
+.alphalist ul li ul li {list-style-image: url(../images/green-bullet.png); list-style-type: square; color:#5B574F;margin: 3px 0;list-style-position:inside;padding-left:2.5%; margin-top:1%;margin-bottom:1%}
+.lettertitle {width:100%;font-weight:300;background-color:#E1DCD1;display:block;text-decoration:none;padding:0.5% 0 0 2.5%}
+a:hover.lettertitle {text-decoration:none;background-color:#E1DCD1;}
+
+/* .................. Required courses tab .................. */
+.textalign-right {text-align:right;}
+.reqcourses {border-collapse: collapse;}
+.reqcourses th { border-bottom: 3px solid #ccc; border-left:0px; border-right:0px; border-top:0px; padding: .2em; background-color:white; color:black;}
+.reqcourses tr td{ border: 1px solid #fff; padding: .2em;border-bottom: 1px solid #ccc; }
+.reqcourses tr:nth-last-child(-n+1) td{border-bottom: 1px solid white;}
+#tab-2 table {border-collapse:collapse;color:black; outline:1px thin #ccc}
+#tab-2 th { border-bottom: 3px solid #ccc; border-left:0px; border-right:0px; border-top:0px; padding: .2em; background-color:white; color:black;}
+#tab-2 tr td{ border: 1px solid #ccc; padding: 0.5% 0.5% 0.5% 1%;border-bottom: 1px solid #ccc;color:black; }
+#tab-2 tr:nth-last-child(-n+1) td{border-bottom: 1px solid #ccc;}
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: Footer ::::::::::::::::::::: */
+.footercollegename {color:#006858; font-size:140%; padding-left:1%;padding-top:2%;}
+.footerbox {border-top: solid 3px #006858;background-color:#E1DCD1;}
+.footerspacer {padding-left:3em;}
+.footertext {padding: 0.5em;font-size:85%;color:#5B574F;}
+#directedit a {color:#5B574F;text-decoration:none;}
+/* :::::::::::::::::::::::::::::::::::::::::: */
+
+/* ::::::::::::::::::::: Accessibility ::::::::::::::::::::: */
+.sr-only, .sr-only-focusable { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+/* ::::::::::::::::::::: Styles options by screens sizes ::::::::::::::::::::: */
+
+/* .................. small screens .................. */	
+@media only screen and (max-width: 639px) {
+    #m-main-nav, #logotext, #m-main-nav {display:normal;visibility:visible;}
+    #bannertitle {margin-left:20%;top:20%;}
+    #catalogtitle, #logotext, a:hover#logotext, #logotext a, #logotext a:active, #logotext a:visited {font-size:120%; font-weight:700;font-size:2.5vw;}
+    #search-area-screen, #search-area, #desk-main-nav, .bannerlayout img, .wrapperspacer, #quicklinks-m {display:none;visibility:hidden;}
+    #leftNavBar, #insidepage, .leftmenu{ width:100%!important; border:0;margin:0;padding:0!important;border-radius:0px!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+    #insidepage {margin-top:1%;}
+    .catalogWrapper, body {border:0;margin:0;padding:0; width:100%;min-height:480px;}    
+    article .main-content {background-color:white; color:#000; padding:1%; border:0;}
+    #topbanner {width: 100%;height: 70px;overflow:visible;z-index: 1000;}
+    .f-nav{position:fixed;top: 0;left: 0;z-index: 1000;border-bottom:3px solid #FDB913}
+    #bannercontent {width: 100%;height: 70px;position:absolute;}
+    #m-main-nav {float: left;padding: 10px;position:absolute;z-index:10000;overflow:visible;}
+    #menu-icon {display: inline-block;width: 40px;height: 40px;background: #FDB913 url(../images/menu-icon.png) center;}
+    a:hover#menu-icon {background-color: #444;border-radius: 4px 4px 0 0;}
+    #m-main-nav ul {list-style: none;}
+    #m-main-nav li {display: inline-block;float: left;padding: 0}
+    #m-main-nav ul, #m-main-nav:active ul {display: none;position: absolute;padding: 0;background-color: #fff;border: 5px solid #444;left: 10px;top: 50px;width: 100%;border-radius: 4px 0 4px 4px;z-index: 1000;}
+    #m-main-nav li {text-align: center;width: 100%;}
+    #m-main-nav:hover ul {display: block;width:200%;}  
+    #m-main-nav li a {display: block;text-align: center;width: 90%;color: black;padding: 10px 5%;text-shadow: -1px -1px 0 rgba(0,0,0,.15);border-bottom: 1px solid rgba(0,0,0,.2);}
+    #m-main-nav li a:hover {background-color: rgba(0, 104, 88, 1);border-top-color: transparent;color: white;}
+    .r-tabs .r-tabs-nav {display: none;}
+    .r-tabs .r-tabs-accordion-title {display: block;}
+    .footerspacer:after {content:"\a";white-space: pre;}    
+}
+
+/* .................. large screens .................. */	
+@media only screen and (min-width: 640px) {
+    #quicklinks-m, #selectContainer-m, #selectContainer-m h5, #m-main-nav, #search-area, #logotext {display:none;visibility:hidden;border-top: 1px solid rgba(255,255,255,.1);}
+}
+/* :::::::::::::::::::::::::::::::::::::::::: */
+/*
+    dark green          #006858
+    dark gray           #5B574F
+    medium gray         #D0CBBF
+    light gray          #E1DCD1
+    dark yellow         #FDB913
+    light yellow        #F9EAC3    
+*/

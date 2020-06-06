@@ -1,0 +1,258 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+
+
+.cd-tabs {
+  position: relative;
+  width: 98%;
+  max-width: 800px;
+  margin: 0.5em 0;
+}
+.cd-tabs ul{margin:0; padding:0;}
+.cd-tabs li{margin:0; padding:0;}
+.cd-tabs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-tabs::after {
+  /* subtle gradient layer on top right - to indicate it's possible to scroll */
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60px;
+  width: 80px;
+  z-index: 1;
+  pointer-events: none;
+  background: -webkit-linear-gradient( right , #f8f7ee, rgba(248, 247, 238, 0));
+  background: linear-gradient(to left, #f8f7ee, rgba(248, 247, 238, 0));
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.no-cssgradients .cd-tabs::after {
+  display: none;
+}
+.cd-tabs.is-ended::after {
+  /* class added in jQuery - remove the gradient layer when it's no longer possible to scroll */
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-tabs nav {
+  overflow:hidden;
+  -webkit-overflow-scrolling: touch;
+  background: #fff;  border-bottom:solid 3px #2b6959 !important;
+  box-shadow: inset 0 -2px 3px rgba(203, 196, 130, 0.06);
+}
+@media only screen and (min-width: 768px) {
+  .cd-tabs::after {
+    display: none;
+  }
+  .cd-tabs nav {
+  /*  position: absolute;*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: inset -2px 0 3px rgba(203, 196, 130, 0.06);
+    z-index: 1;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .cd-tabs nav {
+    position: relative;
+    float: none;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+.cd-tabs-navigation {
+  width: 360px;
+}
+.cd-tabs-navigation:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-tabs-navigation li {
+  float: left;
+}
+.cd-tabs-navigation a {
+  position: relative;
+  display: block;
+  height: 35px;
+  width: 70px;
+  text-align: center;
+  font-size: 16px !important; font-family:'RobotoCondensed-Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  color: #0073a6; text-decoration:none;
+  padding-top: 20px;
+}
+.no-touch .cd-tabs-navigation a:hover {
+  color: #fff;
+  background-color: rgba(43, 105, 89, 1.0); text-decoration:none;
+}
+.cd-tabs-navigation a.selected {
+  background-color: #2b6959 !important;
+  box-shadow: inset 0 2px 0 #f05451;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .cd-tabs-navigation {
+    /* move the nav to the left on medium sized devices */
+    width:auto !important; display:block;
+   float:left;
+  }
+  .cd-tabs-navigation a {
+    height:auto;
+    width: 70px; 
+    padding: 14px 10px; display:block; border:1px solid #2b6959;
+	  font-size: 13px !important; font-family:'RobotoCondensed-Regular'; margin:2px;
+
+  }
+  .cd-tabs-navigation a.selected {
+    box-shadow: inset 2px 0 0 #328771;
+  }
+  .cd-tabs-navigation a::before {
+    top: 22px;
+  }
+  
+.no-touch .cd-tabs-navigation a:hover {
+  color: #fff;
+  background-color:#2b6959; text-decoration:none;  display: block;
+
+}
+.cd-tabs-navigation a.selected {
+  background-color: #2b6959 !important;
+  box-shadow: inset 0 2px 0 #328771;
+  color: #fff;
+}
+
+
+}
+@media only screen and (min-width: 552px) {
+  .cd-tabs-navigation {
+    /* move the nav to the left on medium sized devices */
+    width: 100px;
+    float: left;
+  }
+  .cd-tabs-navigation a {
+    height:auto;
+    width: 80px;
+     padding: 20px 5px 20px 5px;
+	  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 12px; font-family:'RobotoCondensed-Regular';
+  color: #0073a6; text-decoration:none;
+  }
+  .cd-tabs-navigation a.selected {
+    box-shadow: inset 2px 0 0 #328771;
+  }
+  .cd-tabs-navigation a::before {
+    top: 22px;
+  }
+  
+.no-touch .cd-tabs-navigation a:hover {
+  color: #fff;
+  background-color: rgba(43, 105, 89, 1.0); text-decoration:none;  display: block;
+
+}
+.cd-tabs-navigation a.selected {
+  background-color: #2b6959 !important;
+  box-shadow: inset 0 2px 0 #328771;
+  color: #fff;
+}
+
+
+}
+
+@media only screen and (min-width: 960px) {
+  .cd-tabs-navigation {
+    /* tabbed on top on big devices */
+    width: auto;
+    background-color: #fff; 
+    box-shadow: inset 0 -2px 3px rgba(203, 196, 130, 0.06);
+  }
+  .cd-tabs-navigation a {
+    height: 50px;
+    line-height: 50px;
+    width: auto;
+    text-align: left;
+    font-size: 14px;
+    font-size: 0.875rem;
+    padding: 0 2.8em 0 2.6em; margin: 0 15px 0 0; border-left:1px solid #2b6959; border-right:1px solid #2b6959; border-top:1px solid #2b6959;
+    font-weight: bold
+  }
+  .cd-tabs-navigation a.selected {
+    box-shadow: inset 0 2px 0 #328771;
+  }
+}
+
+.cd-tabs-content {
+  background: #e6e6e6;
+}
+.cd-tabs-content li {
+  display: none;
+  padding: 1.4em;
+}
+.cd-tabs-content li.selected {
+  display: block;
+  -webkit-animation: cd-fade-in 0.5s;
+  -moz-animation: cd-fade-in 0.5s;
+  animation: cd-fade-in 0.5s;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-tabs-content {
+    min-height: 480px;
+  }
+  .cd-tabs-content li {
+    padding: 2em 2em 2em 2em;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .cd-tabs-content {
+    min-height: 0;
+  }
+  .cd-tabs-content li {
+    padding: 3em;
+  }
+  
+}
+
+@-webkit-keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes cd-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

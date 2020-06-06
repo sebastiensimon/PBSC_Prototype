@@ -1,0 +1,26 @@
+/*
+Implementations Skeletor v3 - 5/10/2014
+
+oustyles.css
+
+Add styles to overwrite customer CSS, USE WITH CAUTION.
+
+Contributors: Your Name Here
+Last Updated: Enter Date Here
+*/
+.line-through{
+    text-decoration: line-through; color: #ff0000;
+}
+
+#facultydirectory ul li {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+.greenHeader{
+	background-color:#2b6859;
+}
+
+.PSbodytext {
+  color: white;
+}

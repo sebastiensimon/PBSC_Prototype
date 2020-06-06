@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="h9qGCTE8_alKN5kQ9Pz2X90hUAUuB8kEUr9fXDjRUKg">
+<link rel="stylesheet" type="text/css" href="test_files/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="test_files/bootstrap.css">
+<link href="test_files/generic-notForTabs.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="test_files/jquery.css">
+<link rel="stylesheet" href="test_files/scrollbar.css">
+<link rel="stylesheet" type="text/css" href="test_files/styles.css">
+
+<link rel="stylesheet" href="test_files/digimeg.css">
+<link rel="stylesheet" href="test_files/sidebar.css">
+<!-- CSS reset -->
+<link rel="stylesheet" href="test_files/digimeg.css">
+<link rel="stylesheet" href="test_files/faq-accord.css" type="text/css">
+<link rel="stylesheet" href="test_files/multitab.css">
+
+<script async="" src="test_files/analytics.js"></script><script src="test_files/155954318501406.js" async=""></script><script src="test_files/1610239005907789.js" async=""></script><script async="" src="test_files/fbevents.js"></script><script async="" src="test_files/analytics.js"></script><script type="text/javascript" async="" src="test_files/siteanalyze_66357119.js"></script><script async="" src="test_files/gtm.js"></script><script type="text/javascript" src="test_files/jquery_004.js"></script>
+<script type="text/javascript" src="test_files/jquery_005.js"></script>
+<link type="text/css" rel="stylesheet" href="test_files/jquery_002.css">
+<script type="text/javascript" src="test_files/bootstrap.js"></script>
+<script src="test_files/digimeg.js"></script>
+<script src="test_files/classie.js"></script>
+<!-- LDP -->
+<!-- REMOVED BY OU - SEE COMMON.XSL
+<link rel="stylesheet" href="/_resources/ldp/form/jquery.datetimepicker.min.css"/>
+<link rel="stylesheet" href="/_resources/ldp/form/ou-forms.bootstrap.min.css"/>
+<link rel="stylesheet" href="/_resources/ldp/form/ou-forms.bootstrap.validation.min.css"/>
+-->
+<link rel="stylesheet" href="test_files/bootstrap-thumbnails.css">
+<link rel="stylesheet" href="test_files/prettyPhoto.css">
+<script src="test_files/jquery_002.js"></script>
+
+<!--<script type="text/javascript">
+window.alert = function(){};
+var defaultCSS = document.getElementById('bootstrap-css');
+function changeCSS(css){
+if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+else $('head > link').filter(':first').replaceWith(defaultCSS); 
+}
+$( document ).ready(function() {
+var iframe_height = parseInt($('html').height()); 
+window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+});
+</script>-->
+<script>
+	var instagramClient, instagramToken, instagramItems;
+	function init() {
+		window.addEventListener('scroll', function(e){
+			var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+				shrinkOn = 300;
+			header = document.querySelector("header");
+			if (distanceY > shrinkOn) {
+				classie.add(header,"smaller");
+			} else {
+				if (classie.has(header,"smaller")) {
+					classie.remove(header,"smaller");
+				}
+			}
+		});
+	}
+	window.onload = init(); 
+
+	/* Top links fading in/out
+
+            if ($(window).width() < 760){
+
+
+            $(window).scroll(function() {  
+
+            if ($(this).scrollTop()>0)
+             {
+                $('.top_links').fadeOut();
+             }
+            else
+             {
+              $('.top_links').fadeIn();
+             }
+            });
+
+
+            }
+
+            */
+
+	if ($(window).width() < 760){
+
+		$(document).ready(function(){   
+			$(window).scroll(function () {
+				if ($(this).scrollTop() > 50) {
+					$('#back-to-top').fadeIn();
+				} else {
+					$('#back-to-top').fadeOut();
+				}
+			});
+			// scroll body to 0px on click
+			$('#back-to-top').click(function () {
+				$('#back-to-top').tooltip('hide');
+				$('body,html').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+
+			$('#back-to-top').tooltip('show');
+
+		});
+	}
+</script>
+
+
+<!-- this is the headcode include -->
+<script type="text/javascript" src="test_files/le-mtagconfig.js"></script>	
+<script type="text/javascript" src="test_files/coxmediagroup.js"></script>	
+<script type="text/javascript" src="test_files/pbsc-script.js"></script>
+<script type="text/javascript" src="test_files/pbsc-print.js"></script>	
+<link rel="stylesheet" href="test_files/oustyles.css">
+<link rel="stylesheet" href="test_files/pbsc-style.css">
+<link rel="stylesheet" href="test_files/pbsc-print.css" media="print">
+
+
+      <title>Bookstore | PBSC Bookstore</title>
+      <meta name="Description" content="PBSC Bookstore">
+      <meta name="Keywords" content="Palm Beach State, College Florida, Higher Education, bookstore, textbooks, Course Materials, Clothing, Gifts, T-Shirts, store, shop, fan gear">
+   <script charset="UTF-8" src="test_files/tag.js"></script><script charset="UTF-8" id="_lpTagScriptId_0" src="test_files/a.js"></script></head>
+   <body>
+      
+      
+      <main id="content" aria-label="main content">
+         <div class="clearfix"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 hidden-xs MT20"><script>
+			function goBack() {
+			window.history.back();
+			}
+		</script><noscript>Back button may not work if Javascript is disabled. Please use your browser arrow
+                     to go back.
+                  </noscript>
+               </div>
+               <div class="col-xs-12 visible-xs MT20"><a onclick="goBack()" class="back_link">&lt; Back</a><script>
+			function goBack() {
+			window.history.back();
+			}
+		</script><noscript>Back button may not work if Javascript is disabled. Please use your browser arrow
+                     to go back.
+                  </noscript>
+               </div>
+               <div class="clearfix"></div>
+               <div class="page-title" tabindex="10">
+                  <h1>PBSC Bookstore</h1>
+               </div>
+               <p class="subheading">Need to buy books or supplies? Sell your books? You can do it all at the Palm Beach
+                  State College Bookstore!
+               </p>
+               <div class="clearfix"></div>
+               <div class="col-sm-3 col-sm-push-9 programright-area" role="complementary" aria-label="sidebar">
+                  <nav class="navbar navbar-inverse sidebars" aria-label="secondary">
+                     <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span style="color:#e3e3e3;"><span class="fa fa-arrow-down"></span></span></button><span class="mobile_menu visible-xs">MENU</span></div>
+                     <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                           <li class="leftnav"><a href="http://www.palmbeachstate.edu/panthercard/financial-aid-at-bookstore.aspx">Financial Aid at the Bookstore<span style="font-size:16px;" class="pull-right hidden-xs showopacity "></span></a></li>
+<li class="leftnav"><a href="http://www.palmbeachstate.edu/panthercard/Documents/checkingbookstorefinaid.pdf" target="_blank">What is my bookstore balance?<span style="font-size:16px;" class="pull-right hidden-xs showopacity "></span></a></li>
+
+                        </ul>
+                     </div>
+                  </nav>
+                  <div class="clearfix MB30"></div>
+                  <div class="hidden-xs" role="region" aria-label="additional content">
+                     		
+                     	
+                  </div>
+               </div>
+               <div tabindex="11" class="ou-main col-sm-9 col-sm-pull-3">
+                  <p class="bluesubheading ">&nbsp;</p>
+                  
+                  <p>&nbsp;</p>
+                  
+                  <p class="bluesubheading ">Shop Online</p>
+                  
+                  <p><strong>You can shop online at all of our campus bookstores, anytime.</strong></p>
+                  
+                  <div class="clearfix"></div>
+                  <div class="col-md-3 col-xs-6 students-greentabs"><a href="http://www.bkstr.com/pbscbgstore/home" target="_blank">
+                        <p class="greentabs-head">Belle</p>
+                        <p class="greentabs-headbold">GLADE</p>
+                        <p class="arrow"><span class="fa fa-arrow-right"></span></p></a></div>
+                  <div class="col-md-3 col-xs-6 students-greentabs"><a href="http://www.bkstr.com/palmbeachstsouthstore/home" target="_blank">
+                        <p class="greentabs-head">Boca</p>
+                        <p class="greentabs-headbold">RATON</p>
+                        <p class="arrow"><span class="fa fa-arrow-right"></span></p></a></div>
+                  <div class="col-md-3 col-xs-6 students-greentabs"><a href="http://www.bkstr.com/palmbeachstcentralstore/home" target="_blank">
+                        <p class="greentabs-head">Lake</p>
+                        <p class="greentabs-headbold">WORTH</p>
+                        <p class="arrow"><span class="fa fa-arrow-right"></span></p></a></div>
+                  <div class="col-md-3 col-xs-6 students-greentabs"><a href="http://www.bkstr.com/palmbeachstpbgardenstore/home" target="_blank">
+                        <p class="greentabs-head">Palm Beach</p>
+                        <p class="greentabs-headbold">GARDENS</p>
+                        <p class="arrow"><span class="fa fa-arrow-right"></span></p></a></div>
+                  <div class="clearfix"></div>
+                  
+                  <p class="bluesubheading "><br>Current News
+                  </p>
+                  
+                  <p class="lightgreensubheading "><span style="font-size: 16pt;"><strong>ATTN: Loxahatchee Students</strong></span></p>
+                  
+                  <p><span style="font-size: 12pt;">Students taking classes at the Loxahatchee Groves campus have several options available
+                        to obtain their course materials.</span></p>
+                  
+                  <ul>
+                     
+                     <li><span style="font-size: 12pt;">Shop in person at the Lake Worth campus store<br><br></span></li>
+                     
+                     <li><span style="font-size: 12pt;">Order online from the <a href="http://www.bkstr.com/palmbeachstcentralstore/home" target="_blank">Lake Worth campus store</a> and select home delivery (a small charge may apply)<br><br></span></li>
+                     
+                     <li><span style="font-size: 12pt;">Order online from the Lake Worth campus store and select campus pickup at Loxahatchee.
+                           Books will be available for pickup from 9am-6pm at the main desk in LGA 101.</span>
+                        
+                        <ul>
+                           
+                           <li><span style="font-size: 12pt;">Log in to PantherWeb<br></span></li>
+                           
+                           <li><span style="font-size: 12pt;">Click "Class Schedule"</span></li>
+                           
+                           <li><span style="font-size: 12pt;">Click "Purchase Books"</span></li>
+                           
+                           <li><span style="font-size: 12pt;">Your books appear on the screen. Add them to your cart and check out.</span></li>
+                           
+                           <li><span style="font-size: 12pt;">Choose "Loxahatchee Groves" as your&nbsp; pickup location and pick up on campus.<br></span></li>
+                           
+                        </ul>
+                        
+                     </li>
+                     
+                     <li><span>Students may purchase supplies such as scan trons from the vending machine located
+                           in the cafe area (1st floor). The machine accepts PantherCard only for purchases.<br><br></span></li>
+                     
+                  </ul>
+                  
+                  <p class="bluesubheading "><br>Price Match
+                  </p>
+                  
+                  <p><span style="font-size: 12pt;">Your campus bookstores price match Booksmart, Barnes &amp; Noble, and Amazon!</span></p>
+                  
+                  <p><span style="font-size: 12pt;">A few simple rules:</span></p>
+                  
+                  <ul>
+                     
+                     <li><span style="font-size: 12pt;">If you find a cheaper price after you bought one of our books, we’ll give you the
+                           difference on a gift card, but only within 7 days of the original transaction.</span></li>
+                     
+                     <li><span style="font-size: 12pt;">The price must come from another local bookstore or online retailer. No peer‐to‐peer
+                           marketplaces or aggregator sites.</span></li>
+                     
+                     <li><span style="font-size: 12pt;">The item must currently be in‐stock with us and the local competitor or online site
+                           that is being price matched. Digital books excluded.</span></li>
+                     
+                     <li><span style="font-size: 12pt;">The price advertised has to be for the exact book and edition in our store, including
+                           accompanying components like CDs, online access cards, student manuals and the like.</span></li>
+                     
+                     <li><span style="font-size: 12pt;">The competitor has to clearly state whether the book is new, used or rented.</span></li>
+                     
+                  </ul>
+                  
+                  <p><span style="font-size: 12pt;">If you find a better advertised deal on a textbook that we carry, bring the ad into
+                        the bookstore and we’ll give you a discount for the difference.</span></p>
+                  
+                  <p><span style="font-size: 12pt;">BUY IT. RENT IT. NEW OR USED ‐ we’ll match the lowest advertised price.</span></p>
+                  
+                  <p class="bluesubheading "><br>Rent-a-Text Program
+                  </p>
+                  
+                  <p><span style="color: #000000;"> <span style="font-size: 12pt;">Rent-a-text is a lower cost option for obtaining the materials needed for your classes!
+                           For more information about this program, contact the Palm Beach State College Bookstore
+                           on your campus, or visit the <a href="https://www.follettrental.com/" aria-label="rent a text website" title="rent a text website" target="_blank">Rent-A-Text Website</a>.<br><br></span></span></p>
+                  
+                  <table class="collapsebyrow table2-striped">
+                     
+                     <thead>
+                        
+                        <tr>
+                           
+                           <td style="background-color: #0073a6;" colspan="6"><span style="font-size: 14pt;">Locations &amp; Hours of Operation</span></td>
+                           
+                        </tr>
+                        
+                     </thead>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td>Belle Glade</td>
+                           
+                           <td>CRB Bldg.</td>
+                           
+                           <td>1977 College Drive</td>
+                           
+                           <td>Mon. - Thur. 9am - 7:00pm</td>
+                           
+                           <td>Fri. CLOSED</td>
+                           
+                           <td>(561) 993-1173</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Boca Raton</td>
+                           
+                           <td>BK Bldg.</td>
+                           
+                           <td>801 PBSC Drive</td>
+                           
+                           <td>Mon. - Thur. 8am - 7:00pm</td>
+                           
+                           <td>Fri. 8am - 1pm</td>
+                           
+                           <td>(561) 862-4360</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Lake Worth</td>
+                           
+                           <td>BK Bldg.</td>
+                           
+                           <td>4200 Congress Ave.</td>
+                           
+                           <td>Mon. - Thur. 8am - 7:00pm</td>
+                           
+                           <td>Fri. 8am - 1pm</td>
+                           
+                           <td>(561) 868-3285</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>PB Gardens</td>
+                           
+                           <td>BR Bldg.</td>
+                           
+                           <td>3160 PGA Blvd.</td>
+                           
+                           <td>Mon. - Thur. 8am - 7:00pm</td>
+                           
+                           <td>Fri. 8am - 1pm</td>
+                           
+                           <td>(561) 207-5660</td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+                  <p>&nbsp;</p>
+                  
+                  <p class="lightgreensubheading ">Extended Hours</p>
+                  
+                  <table class="collapsebyrow table3-striped">
+                     
+                     <thead>
+                        
+                        <tr style="background-color: #1a9d7d;">
+                           
+                           <td><span style="font-size: 12pt;">Dates</span></td>
+                           
+                           <td><span style="font-size: 12pt;">Lake Worth<br></span></td>
+                           
+                           <td>
+                              
+                              <p><span style="font-size: 12pt;">Boca Raton &amp;<br>Palm Beach Gardens<br></span></p>
+                              
+                           </td>
+                           
+                           <td><span style="font-size: 12pt;">Belle Glade</span></td>
+                           
+                        </tr>
+                        
+                     </thead>
+                     
+                     <tbody>
+                        
+                        <tr>
+                           
+                           <td>Wednesday, December 20 - Thursday, December 21</td>
+                           
+                           <td>9am-4pm</td>
+                           
+                           <td>10am-2pm</td>
+                           
+                           <td>CLOSED</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Friday, December 22 - Tuesday, December 26</td>
+                           
+                           <td>CLOSED</td>
+                           
+                           <td>CLOSED</td>
+                           
+                           <td>CLOSED</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Wednesday, December 27 - Thursday, December 28</td>
+                           
+                           <td>9am-4pm</td>
+                           
+                           <td><span>10am-2pm</span></td>
+                           
+                           <td><span>CLOSED</span></td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Friday, December 29 - Monday, January 1</td>
+                           
+                           <td>CLOSED</td>
+                           
+                           <td>CLOSED</td>
+                           
+                           <td>CLOSED</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Tuesday, January 2 - Thursday, January 4</td>
+                           
+                           <td>8am - 8pm</td>
+                           
+                           <td><span>8am - 8pm</span></td>
+                           
+                           <td><span>9am-7pm</span></td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Friday, January 5</td>
+                           
+                           <td>8am - 5pm</td>
+                           
+                           <td><span>8am - 5pm</span></td>
+                           
+                           <td>&nbsp;9am-5pm</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Saturday, January 6</td>
+                           
+                           <td>9am - 3pm</td>
+                           
+                           <td>9am-3pm</td>
+                           
+                           <td>10am-3pm</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Sunday, January 7</td>
+                           
+                           <td>CLOSED</td>
+                           
+                           <td>CLOSED</td>
+                           
+                           <td>CLOSED&nbsp;</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Monday, January 8 - Thursday, January 11</td>
+                           
+                           <td><span>8am - 8pm</span></td>
+                           
+                           <td><span>8am - 8pm</span></td>
+                           
+                           <td>&nbsp;9am-7pm</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Friday, January 12</td>
+                           
+                           <td><span>8am - 5pm</span></td>
+                           
+                           <td><span>8am-5pm</span></td>
+                           
+                           <td>&nbsp;9am-12pm</td>
+                           
+                        </tr>
+                        
+                        <tr>
+                           
+                           <td>Saturday, January 13 - Monday, January 15</td>
+                           
+                           <td><span>CLOSED</span></td>
+                           
+                           <td><span>CLOSED</span></td>
+                           
+                           <td>CLOSED</td>
+                           
+                        </tr>
+                        
+                     </tbody>
+                     
+                  </table>
+                  
+                  <p>&nbsp;</p>
+                  
+                  
+                  
+                  
+                  
+                  
+                  	
+                  <div class="visible-xs"></div></div>
+            </div>
+         </div><a id="back-to-top" href="#" class="btn btn-success btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left" aria-label="arrow-up"><span class="fa fa-arrow-up"></span></a><div class="clearfix MT50"></div>
+      </main>
+      <nav aria-label="Social Media Navigation">
+         <div>
+            
+         </div>
+      </nav>
+      <footer>
+         
+<div class="clearfix"></div>
+<div class="footer2" role="contentinfo"><a id="directedit" title="internal use"><a id="de" href="http://web1-staging.palmbeachstate.edu/10?skin=oucampus&amp;account=main&amp;site=redesign&amp;action=de&amp;path=/bookstore/default.pcf" style="color: #ffffff;">©</a></a> 2017 Palm Beach State College. All Rights Reserved.
+   		
+</div>
+<script src="test_files/main.js"></script><noscript>Tabbed navigation may not work if JavaScript is disabled</noscript>
+<script src="test_files/scripts.js"></script><noscript>JavaScript must be enabled in your browser in order to use some functions</noscript>
+<script src="test_files/ou-scripts.js"></script><noscript>Feeds may not be working properly if JavaScript is not enabled</noscript>
+<script src="test_files/direct-edit.js"></script><noscript>Some functions may not work properly if Javascript isn't enabled</noscript>
+
+<!-- LDP -->
+<script src="test_files/jquery.js"></script><noscript>Thumbnail photos will not show unless Javascript is enabled</noscript>
+<script src="test_files/jquery_003.js"></script><noscript>Photo gallery slideshow will not show unless Javascript is enabled</noscript>
+<script src="test_files/jquery-migrate-1.js"></script><noscript>JavaScript must be enabled in your browser in order to use some functions</noscript>
+<!-- REMOVED BY OU - SEE COMMON.XSL
+<script src="/_resources/ldp/form/jquery.datetimepicker.full.min.js"></script>
+<script src="/_resources/ldp/form/ou-forms.js"></script>-->
+<!-- Insert Siteimprove Priority script here -->
+<script type="text/javascript">
+/*<![CDATA[*/
+(function() {
+var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+sz.src = '//siteimproveanalytics.com/js/siteanalyze_66357119.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+/*]]>*/
+</script>
+<!-- Insert google analytics here -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-613849-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Monsido script -->
+<script type="text/javascript">
+    var _monsido = _monsido || [];
+    _monsido.push(['_setDomainToken', 'AVIFijDegiqlF2gOtD2nLA']);
+    _monsido.push(['_withStatistics', 'true']);
+</script>
+<script src="test_files/monsido.js"></script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '155954318501406'); 
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" 
+src="https://www.facebook.com/tr?id=155954318501406&ev=PageView
+&noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+         <div id="hidden" style="display:none;">
+            <div style="display: none"></div>
+         </div>
+      </footer>
+   
+<iframe style="width: 0px; height: 0px; position: absolute; top: -1000px; left: -1000px;" tabindex="-1" aria-hidden="true" role="presentation" title="Intentionally blank" name="lpSS_31502061550" id="lpSS_31502061550" src="test_files/storage.html"></iframe><iframe style="width: 0px; height: 0px; position: absolute; top: -1000px; left: -1000px;" tabindex="-1" aria-hidden="true" role="presentation" title="Intentionally blank" name="lpSS_39104683293" id="lpSS_39104683293" src="test_files/storage_002.html"></iframe><script type="text/javascript" id="">(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-613849-1","auto");ga("send","pageview");</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","//connect.facebook.net/en_US/fbevents.js");fbq("init","1610239005907789");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1610239005907789&amp;ev=PageView&amp;noscript=1"></noscript>
+<script type="text/javascript" id="">var ssaUrl=("https:"==document.location.protocol?"https://":"http://")+"pixel.programmatictrader.com/iap/85aa77420f7b7cb2";(new Image).src=ssaUrl;</script></body></html>
